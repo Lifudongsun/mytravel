@@ -1,0 +1,845 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Sun</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+
+<!-- css files -->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/jQuery.lightninBox.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/team.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/header.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- /css files -->
+<!-- js files -->
+<script src="js/modernizr.js"></script>
+<!-- js files -->
+</head>
+<body id="index.html" data-spy="scroll" data-target=".navbar" data-offset="60">
+<!-- navigation -->
+<div class="nav-links">	
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand" href="#myPage"><h1>Sun</h1></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav link-effect">
+					<li class="active"><a href="index.html">首页</a></li>
+					<li><a href="#service">我们服务</a></li>
+					<li><a href="#team">幻境</a></li>
+					<li><a href="#work">风景</a></li>
+					<li><a href="#stats">网博动态</a></li>
+					<li><a href="message/regist.html">注册</a></li>
+					<li><a href="message/login.html">登录</a></li>
+				</ul>
+			</div>
+		</div>
+		<form class="search-container" action="#" method="post">
+			<input id="search-box" type="text" class="search-box" name="q" />
+			<label for="search-box"><span class="fa fa-search search-icon" aria-hidden="true"></span></label>
+			<input type="submit" id="search-submit" />
+		</form>
+	</nav>
+</div>
+<!-- /navigation -->
+<!-- banner section -->
+<section class="banner">
+	<div class="slider">
+		<ul class="slider-main">
+			<li class="slider-panel">
+				<img alt="W3layouts" title="" src="images/banner1.jpg" class="img-responsive">
+				<div class="banner-info">
+					<div class="row">
+						<div class="col-lg-12">
+							<h3>因为有梦，所以勇敢出发</h3>
+							<a href="#" data-toggle="modal" data-target="#largeModal">Read More</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="slider-panel">
+				<img alt="W3layouts" title="" src="images/banner2.jpg" class="img-responsive">
+				<div class="banner-info">
+					<div class="row">
+						<div class="col-lg-12">
+							<h3>人生最好的旅行，就是你在一个陌生的地方，发现一种久违的感动</h3>
+							<a href="#" data-toggle="modal" data-target="#largeModal">Read More</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="slider-panel">
+				<img alt="W3layouts" title="" src="images/banner3.jpg" class="img-responsive">
+				<div class="banner-info">
+					<div class="row">
+						<div class="col-lg-12">
+							<h3>身未动，心已远</h3>
+							<a href="#" data-toggle="modal" data-target="#largeModal">Read More</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="slider-panel">
+				<img alt="W3layouts" title="" src="images/banner4.jpg" class="img-responsive">
+				<div class="banner-info">
+					<div class="row">
+						<div class="col-lg-12">
+							<h3>人生至少有要有两次冲动，一为奋不顾身的爱情，一为说走就走的旅行</h3>
+							<a href="#" data-toggle="modal" data-target="#largeModal">Read More</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="slider-panel">
+				<img alt="W3layouts" title="" src="images/banner5.jpg" class="img-responsive">
+				<div class="banner-info">
+					<div class="row">
+						<div class="col-lg-12">
+							<h3>选择出发，便只顾风雨兼程</h3>
+							<a href="rotate.html" data-toggle="modal" data-target="#largeModal">Read More</a>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<div class="slider-extra">
+			<ul class="slider-nav">
+				<li class="slider-item"><p class="sl">1</p></li>
+				<li class="slider-item"><p class="sl">2</p></li>
+				<li class="slider-item"><p class="sl">3</p></li>
+				<li class="slider-item"><p class="sl">4</p></li>
+				<li class="slider-item"><p class="sl">5</p></li>
+			</ul>
+			<div class="slider-page"> <a class="slider-pre" href="javascript:;;">&lt;</a> <a class="slider-next" href="javascript:;;">&gt;</a> </div>
+		</div>
+		<div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel"><a href="photo/index.html">关于我们</a></h4>
+					</div>
+
+					<!--<div class="modal-footer">-->
+						<!--<button type="button" class="btn btn-lg btn-success" data-dismiss="modal">点击关闭</button>-->
+					<!--</div>-->
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /banner section -->
+<!-- services section -->
+<section class="service" id="service">
+	<div class="container">
+		<h2 class="text-center">我们*服务</h2>
+		<p class="text-center">有一种遇见，不曾邀约，却心有灵犀；有一种目光，不远不近，却一直在守望；</p>
+		<div class="row">
+			<div class="col-lg-4 col-md-4 serv-w3ls">
+				<i class="fa fa-plane" aria-hidden="true" onclick=javascript:flight()></i>
+				<h4>阡陌年华，驻足回眸，季节以悄然流逝</h4>
+				<p class="serv-p">风掠过记忆的年轮，却带不走岁月留下的斑驳；阡陌年华，驻足回眸，季节以悄然流逝，倾听白昼遗落在黑夜的惆怅，任思绪狂妄飘洒，叹红尘错落，情缘深重，任点滴的思念独自飘零。</p>
+				<span class="line1"></span>
+			</div>
+			<div class="col-lg-4 col-md-4 serv-w3ls">
+				<i class="fa fa-suitcase" aria-hidden="true" onclick=javascript:hotel()></i>
+				<h4>有一种遇见，不曾邀约，却心有灵犀</h4>
+				<p class="serv-p">掬一捧岁月，握一份懂得，书一笔清远，盈一眸淡恬，时光静好，心，永远微笑向暖；不假想，不期望，过好每个今天，让日子过得单纯而美好；美好的，留在心底；遗憾的，随风散去。</p>
+				<span class="line1"></span>
+			</div>
+			<div class="col-lg-4 col-md-4 serv-w3ls">
+				<i class="fa fa-globe" aria-hidden="true" onclick=javascript:tripmap()></i>
+				<h4>倚琴翠寰一路瑶歌，寄心清风明月</h4>
+				<p class="serv-p">一个浪迹天涯的梦想，一句春暖花开的承诺，一身瘦马断剑的行袍，一场千里之外的邂逅。梦想就在这样熟悉的风中飞入天涯，没有缱绻，没有怨怼，因为浪迹天涯才是少年的梦。</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- /services section -->
+<!-- event section-->
+<section class="event">
+	<div class="container-fluid">
+		<div class="row event-agile1">
+			<div class="col-lg-6 col-md-6 event-w3ls">
+				<ul>
+					<li></li>
+					<li><span></span></li>
+					<li><span></span></li>
+					<li><span><span></span></span></li>
+					<li><span></span></li>
+					<li><span></span></li>
+					<li><span><span></span></span></li>
+					<li><span></span></li>
+					<li><span></span></li>
+					<li><span></span></li>
+				</ul>
+			</div>
+			<div class="col-lg-6 col-md-6 event-w3ls">
+				<div class="hover01 column">
+					<div>
+						<figure><img src="images/event-img1.jpg" alt="上海 " title="上海" class="img-responsive"></figure>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row event-agile2">
+			<div class="col-lg-6 col-md-6 event-w3ls">
+				<div class="hover01 column">
+					<div>
+						<figure><img src="images/event-img2.jpg" alt="巴萨" title="巴萨" class="img-responsive"></figure>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 event-w3ls lfd">
+				<div id="lfdcontainer" class="">
+					<div id="lfdtranslation">
+						<div id="lfdball"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /event section -->
+<!-- team section -->
+<section class="team" id="team">
+	<div class="container">
+		<h3 class="text-center">我们*幻境</h3>
+		<p class="text-center">谁眼角朱红的泪痣成全了你的繁华一世、你金戈铁马的江山赠与谁一场石破惊天的空欢喜。 </p>
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-6 team-w3ls">
+				<div class="view view-third">
+                    <img src="images/hs.jpg" alt="世界名山-黄山" title="世界名山-黄山" class="img-responsive">
+                    <div class="mask">
+                        <h4>黄山</h4>
+                        <p class="info">世界名山</p>
+                    </div>
+                </div>	
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 team-w3ls">
+				<div class="view view-third">
+                    <img src="images/ems.jpg" alt="世界名山-峨眉山" title="世界名山-峨眉山" class="img-responsive">
+                    <div class="mask">
+                        <h4>峨眉山</h4>
+                        <p class="info">世界名山</p>
+                    </div>
+                </div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 team-w3ls">
+				<div class="view view-third">
+                    <img src="images/wts.jpg" alt="世界名城-五台山" title="世界名城-五台山" class="img-responsive">
+                    <div class="mask">
+                        <h4>五台山</h4>
+                        <p class="info">世界名山</p>
+                    </div>
+                </div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 team-w3ls">
+				<div class="view view-third">
+                    <img src="images/ls.jpg" alt="世界名城-庐山" title="世界名城-庐山" class="img-responsive "height="207px">
+                    <div class="mask">
+                        <h4>庐山</h4>
+                        <p class="info">世界名山</p>
+                    </div>
+                </div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 team-w3ls">
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /team section -->
+<!-- work section -->
+<section class="work" id="work">
+	<h3 class="text-center">我们*风景</h3>
+	<p class="text-center">爱尔兰雪、土耳其蓝、莫斯科眼泪、波斯湾海、维也纳厅、阿拉伯传说。</p>
+	<div class="gallery-grids">
+		<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+			<ul id="myTab" class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">All</a></li>
+				<li role="presentation"><a href="#hotel" role="tab" id="hotel-tab" data-toggle="tab" aria-controls="hotel">酒店</a></li>
+				<li role="presentation"><a href="#restaurant" role="tab" id="restaurant-tab" data-toggle="tab" aria-controls="restaurant">餐厅</a></li>
+				<li role="presentation"><a href="#cruise" role="tab" id="cruise-tab" data-toggle="tab" aria-controls="cruise">巡航</a></li>
+				<li role="presentation"><a href="#sea" role="tab" id="sea-tab" data-toggle="tab" aria-controls="sea">风景</a></li>
+			</ul>
+			<div id="myTabContent" class="tab-content">
+				<div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+					<div class="tab_img">
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work1.jpg" class="lightninBox" data-lb-group="1">
+								<img src="images/work1.jpg" class="img-responsive" alt="" />
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>酒店与远洋风景</h5>
+									<p>谁眼角朱红的泪痣成全了你的繁华一世。</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work2.jpg" class="lightninBox" data-lb-group="1">
+								<img src="images/work2.jpg" class="img-responsive" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>巡航</h5>
+									<p>谁眼角朱红的泪痣成全了你的繁华一世。</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work3.jpg" class="lightninBox" data-lb-group="1">
+								<img src="images/work3.jpg" class="img-responsive" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>酒店与远洋风景</h5>
+									<p>谁眼角朱红的泪痣成全了你的繁华一世。</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work4.jpg" class="lightninBox" data-lb-group="1">
+								<img src="images/work4.jpg" class="img-responsive" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>餐厅</h5>
+									<p>谁眼角朱红的泪痣成全了你的繁华一世。</p>
+								</div>
+							</a>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="tab_img">
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work5.jpg" class="lightninBox" data-lb-group="1">
+								<img src="images/work5.jpg" class="img-responsive" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>酒店与远洋风景</h5>
+									<p>谁眼角朱红的泪痣成全了你的繁华一世。</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work6.jpg" class="lightninBox" data-lb-group="1">
+								<img src="images/work6.jpg" class="img-responsive" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>酒店与远洋风景</h5>
+									<p>谁眼角朱红的泪痣成全了你的繁华一世。</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work7.jpg" class="lightninBox" data-lb-group="1">
+								<img src="images/work7.jpg" class="img-responsive" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>餐厅</h5>
+									<p>谁眼角朱红的泪痣成全了你的繁华一世。</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work8.jpg" class="lightninBox" data-lb-group="1">
+								<img src="images/work8.jpg" class="img-responsive" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>餐厅</h5>
+									<p>谁眼角朱红的泪痣成全了你的繁华一世。</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work9.jpg" class="lightninBox" data-lb-group="1">
+								<img src="images/work9.jpg" class="img-responsive" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>酒店</h5>
+									<p>谁眼角朱红的泪痣成全了你的繁华一世。</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work10.jpg" class="lightninBox" data-lb-group="1">
+								<img src="images/work10.jpg" class="img-responsive" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>酒店</h5>
+									<p>谁眼角朱红的泪痣成全了你的繁华一世。</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work11.jpg" class="lightninBox" data-lb-group="1">
+								<img src="images/work11.jpg" class="img-responsive" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>餐厅</h5>
+									<p>谁眼角朱红的泪痣成全了你的繁华一世。</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work12.jpg" class="lightninBox" data-lb-group="1">
+								<img src="images/work12.jpg" class="img-responsive" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>酒店与远洋风景</h5>
+									<p>谁眼角朱红的泪痣成全了你的繁华一世。</p>
+								</div>
+							</a>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane fade" id="hotel" aria-labelledby="hotel-tab">
+					<div class="tab_img">
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work1.jpg" class="lightninBox" data-lb-group="2">
+								<img src="images/work1.jpg" class="img-responsive zoom-img" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>酒店与远洋风景</h5>
+									<p>谁眼角朱红的泪痣成全了你的繁华一世。</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work3.jpg" class="lightninBox" data-lb-group="2">
+								<img src="images/work3.jpg" class="img-responsive zoom-img" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>酒店与远洋风景</h5>
+									<p>谁眼角朱红的泪痣成全了你的繁华一世。</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work9.jpg" class="lightninBox" data-lb-group="2">
+								<img src="images/work9.jpg" class="img-responsive zoom-img" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>酒店</h5>
+									<p>谁眼角朱红的泪痣成全了你的繁华一世。</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work10.jpg" class="lightninBox" data-lb-group="2">
+								<img src="images/work10.jpg" class="img-responsive zoom-img" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>酒店</h5>
+									<p>谁眼角朱红的泪痣成全了你的繁华一世。</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work12.jpg" class="lightninBox" data-lb-group="2">
+								<img src="images/work12.jpg" class="img-responsive zoom-img" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>酒店与远洋风景</h5>
+									<p>谁眼角朱红的泪痣成全了你的繁华一世。</p>
+								</div>
+							</a>
+						</div>
+						<div class="clearfix"> </div>
+					</div>	
+				</div>
+				<div role="tabpanel" class="tab-pane fade" id="restaurant" aria-labelledby="restaurant-tab">
+					<div class="tab_img">
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work4.jpg" class="lightninBox" data-lb-group="3">
+								<img src="images/work4.jpg" class="img-responsive zoom-img" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>餐厅</h5>
+									<p>谁眼角朱红的泪痣成全了你的繁华一世。</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work11.jpg" class="lightninBox" data-lb-group="3">
+								<img src="images/work11.jpg" class="img-responsive zoom-img" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>餐厅</h5>
+									<p>谁眼角朱红的泪痣成全了你的繁华一世。</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work12.jpg" class="lightninBox" data-lb-group="3">
+								<img src="images/work12.jpg" class="img-responsive zoom-img" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>酒店与远洋风景</h5>
+									<p>谁眼角朱红的泪痣成全了你的繁华一世。</p>
+								</div>
+							</a>
+						</div>
+						<div class="clearfix"> </div>
+					</div>	
+				</div>
+				<div role="tabpanel" class="tab-pane fade" id="cruise" aria-labelledby="cruise-tab">
+					<div class="tab_img">
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work2.jpg" class="lightninBox" data-lb-group="4">
+								<img src="images/work2.jpg" class="img-responsive zoom-img" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>巡航</h5>
+									<p>谁眼角朱红的泪痣成全了你的繁华一世。</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work7.jpg" class="lightninBox" data-lb-group="4">
+								<img src="images/work7.jpg" class="img-responsive zoom-img" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>巡航</h5>
+									<p>谁眼角朱红的泪痣成全了你的繁华一世。</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work8.jpg" class="lightninBox" data-lb-group="4">
+								<img src="images/work8.jpg" class="img-responsive zoom-img" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>巡航</h5>
+									<p>谁眼角朱红的泪痣成全了你的繁华一世。</p>
+								</div>
+							</a>
+						</div>
+						<div class="clearfix"> </div>
+					</div>	
+				</div>
+				<div role="tabpanel" class="tab-pane fade" id="sea" aria-labelledby="sea-tab">
+					<div class="tab_img">
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work1.jpg" class="lightninBox" data-lb-group="5">
+								<img src="images/work1.jpg" class="img-responsive zoom-img" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>远洋风景</h5>
+									<p>谁眼角朱红的泪痣成全了你的繁华一世、你金戈铁马的江山赠与谁一场石破惊天的空欢喜。</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work3.jpg" class="lightninBox" data-lb-group="5">
+								<img src="images/work3.jpg" class="img-responsive zoom-img" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>酒店与远洋风景</h5>
+									<p>一个浪迹天涯的梦想，一句春暖花开的承诺，一身瘦马断剑的行袍，一场千里之外的邂逅。</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work5.jpg" class="lightninBox" data-lb-group="5">
+								<img src="images/work5.jpg" class="img-responsive zoom-img" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>酒店与远洋风景</h5>
+									<p>梦想就在这样熟悉的风中飞入天涯，没有缱绻，没有怨怼，因为浪迹天涯才是少年的梦。</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work6.jpg" class="lightninBox" data-lb-group="5">
+								<img src="images/work6.jpg" class="img-responsive zoom-img" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>酒店与远洋风景</h5>
+									<p>梦想就在这样熟悉的风中飞入天涯，没有缱绻，没有怨怼，因为浪迹天涯才是少年的梦。</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 portfolio-grids">
+							<a href="images/work12.jpg" class="lightninBox" data-lb-group="5">
+								<img src="images/work12.jpg" class="img-responsive zoom-img" alt=""/>
+								<div class="b-wrapper">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+									<h5>酒店与远洋风景</h5>
+									<p>梦想就在这样熟悉的风中飞入天涯，没有缱绻，没有怨怼，因为浪迹天涯才是少年的梦。</p>
+								</div>
+							</a>
+						</div>
+						<div class="clearfix"> </div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>	
+</section>
+<!-- /work section -->
+<!-- testimonial section -->
+<section class="test">
+	<div class="container">
+		<h3 class="text-center">我们*见证</h3>
+		<p class="text-center">谁眼角朱红的泪痣成全了你的繁华一世、你金戈铁马的江山赠与谁一场石破惊天的空欢喜。</p>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="hover">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<div class="row">
+						<div class="col-lg-6 col-md-6">
+							<div class="test-details">	
+								<div class="test-w3ls">
+									<p class="test-p1">迪拜凭借优越的地理位置，实行自由和稳定的经济政策，大力发展转口贸易业、房地产业、旅游业等非石油产业，还着重发展现代高科技产业，建成了一系列现代化配套基础设施。
+										迪拜正以他高速的发展速度让世界惊叹，超前规划、务实奋发成为迪拜缔造发展奇迹的重要因素。</p>
+								</div>
+								<div class="test-agile">
+									<img src="images/test-img1.jpg" alt="w3layouts" title="w3layouts" class="img-circle img-responsive">
+									<h4>迪拜<span>&nbsp;&nbsp;阿拉伯联合酋长国（1547万国际游客）</span></h4>
+									<div class="clearfix"></div>	
+								</div>
+							</div>	
+						</div>
+						<div class="col-lg-6 col-md-6">
+							<div class="test-details">
+								<div class="test-w3ls">
+									<p class="test-p1">纽约是美国第一大都市和第一大商港，它不仅是美国的金融中心，也是全世界金融中心之一。
+										纽约位于纽约州东南哈得孙河口，濒临大西洋，占地面积1214平方公里，它由五个区组成：曼哈顿、布鲁克林、布朗克斯、昆斯和里士满，市区人口833.6万，包括郊区在内的大纽约市人口1900万。</p>
+								</div>
+								<div class="test-agile">
+									<img src="images/test-img2.jpg" alt="w3layouts" title="w3layouts" class="img-circle img-responsive">
+									<h4>纽约<span>&nbsp;&nbsp;美国（1275万国际游客）</span></h4>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+				<div class="item">
+					<div class="row">
+						<div class="col-lg-6 col-md-6">
+							<div class="test-details">
+								<div class="test-w3ls">
+									<p class="test-p1">维也纳也是一座发展迅速的城市，建设中的新街区能够充分容纳新移民的到来。
+										这里的生活节奏通常比较慢，舒适之中隐藏着古典与现代的交融——既有阳春白雪，又有通俗文化，既有历史遗迹，又有现代风格——企业和个人都可以在这里找到灵感和商机。
+										相对奥地利的保守，维也纳也更加崇尚民众的自由意识和选择。</p>
+								</div>
+								<div class="test-agile">
+									<img src="images/test-img3.jpg" alt="w3layouts" title="w3layouts" class="img-circle img-responsive">
+									<h4>维也纳<span>&nbsp;&nbsp;奥地利（1202万国际游客）</span></h4>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>	
+						<div class="col-lg-6 col-md-6">
+							<div class="test-details">	
+								<div class="test-w3ls">
+									<p class="test-p1">作为巴伐利亚州的中心城市，这里将现代元素与传统风格很好地结合在了一起，辅之以绿色的田野和远近闻名的蓝天白云。
+										这里的环境适合家庭生活，很容易让人扎下根来。这里的交通设施能轻易的在南蒂罗尔和阿尔卑斯山风景区之间穿梭，因此外来旅游变得十分方便。
+										金色的沙滩将蔚蓝的海水与岸上墨绿色的橄榄树和松林连成一片。
+									</p>
+								</div>
+								<div class="test-agile">
+									<img src="images/test-img4.jpg" alt="w3layouts" title="w3layouts" class="img-circle img-responsive">
+									<h4>慕尼黑<span>&nbsp;&nbsp;德国（1195万国际游客）</span></h4>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div> 
+				</div>	
+				<div class="item">
+					<div class="row">
+						<div class="col-lg-6 col-md-6">
+							<div class="test-details">	
+								<div class="test-w3ls">
+									<p class="test-p1">香港位于中国东南端，是发展日渐迅速的东亚地区的枢纽，地理条件优越。
+										香港面积1104平方公里（截至2013年10月），人口约720万，人口密度为每平方公里6522人。香港是全球第三大金融中心、全球第十一大贸易体系、第六大外汇市场及第十二大银行中心。
+										香港股票市场规模之大，在亚洲排名第二。</p>
+								</div>
+								<div class="test-agile">
+									<img src="images/test-img5.jpg" alt="w3layouts" title="w3layouts" class="img-circle img-responsive">
+									<h4>香港<span>&nbsp;&nbsp;中国（837万国际游客）</span></h4>
+									<div class="clearfix"></div>
+
+								</div>
+							</div>
+						</div>	
+						<div class="col-lg-6 col-md-6">
+							<div class="test-details">	
+								<div class="test-w3ls">
+									<p class="test-p1">巴塞罗那位于伊比利亚半岛东北部，面临地中海。城市主体建于科尔赛罗拉山的一块高地上，高地面积约160平方公里，城市占据了其中的101平方公里。
+										洛布里加特河流经城市西南，巴索斯河流经城市北边。距离法西边境的比利牛斯山脉约160公里。，在满天朝霞或夕阳的余辉里，都会令你恍若置身于仙境。</p>
+								</div>
+								<div class="test-agile">
+									<img src="images/test-img6.jpg" alt="w3layouts" title="w3layouts" class="img-circle img-responsive">
+									<h4>巴塞罗那<span>&nbsp;&nbsp;西班牙（820万国际游客）</span></h4>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</section>
+<!-- /testimonial section -->
+<!-- statistics section -->
+<section class="stats" id="stats">
+	<div class="container">	
+		<div class="row">
+			<div class="col-md-3 col-sm-3 stats-grid stats-grid-1">
+				<div class="numscroller" data-slno='1' data-min='0' data-max='158' data-delay='3' data-increment="1">85</div>
+				<i class="fa fa-money" aria-hidden="true"></i>
+				<h4>我们公司</h4>
+			</div>
+			<div class="col-md-3 col-sm-3 stats-grid stats-grid-2">
+				<div class="numscroller" data-slno='1' data-min='0' data-max='63' data-delay='3' data-increment="1">95</div>
+				<i class="fa fa-trophy" aria-hidden="true"></i>
+				<h4>我们奖杯</h4>
+			</div>
+			<div class="col-md-3 col-sm-3 stats-grid stats-grid-3">
+				<div class="numscroller" data-slno='1' data-min='0' data-max='421' data-delay='3' data-increment="1">80</div>
+				<i class="fa fa-users" aria-hidden="true"></i>
+				<h4>客户利益</h4>
+			</div>
+			<div class="col-md-3 col-sm-3 stats-grid stats-grid-4">
+				<div class="numscroller" data-slno='1' data-min='0' data-max='562' data-delay='3' data-increment="1">90</div>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<h4>我们星星</h4>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- footer section -->
+<div class="footer">
+	<div class="info_text">
+		<a href="">关于我们</a>|
+		<a href="">联系我们</a>|
+		<a href="">商家入驻</a>|
+		<a href="">友情链接</a>|
+		<a href="">站点地图</a>|
+		<a href="">手机商城</a>|
+		<a href="">销售联盟</a>|
+		<a href="">商城社区</a>|
+		<a href="">企业文化</a>|
+		<a href="">帮助中心</a>|
+		<a href="">留言板</a>
+	</div>
+	<p>
+		<span>© 2005-2017 Sun旅游 版权所有，并保留所有权利。</span>
+		<span>Tel: 188888888888 </span>
+		<span>E-mail: fudong-L.com</span>
+	</p>
+
+</div>
+<!-- /footer section -->
+<a href="#0" class="cd-top">Top</a>
+<!--js flight 特价机票-->
+<script>
+	function flight(){
+		window.location.href="follow/index.html";
+	}
+</script>
+<!--js hotel 旅行酒店-->
+<script>
+	function hotel(){
+		window.location.href="hotel.html";
+	}
+</script>
+<!--js tripmap 景点大全-->
+<script>
+	function tripmap(){
+		window.location.href="pubuliu/index.html";
+	}
+</script>
+<!--<script>-->
+	<!--var seter = document.getElementById("seter");-->
+	<!--hideRight.onclick = function(){-->
+		<!--seter.style.display = "block"-->
+	<!--}-->
+<!--</script>-->
+<!-- js files -->
+<script src="js/miaov.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/SmoothScroll.min.js"></script>
+<script src="js/main.js"></script> 
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+<!-- js for statistics -->
+ <script type="text/javascript" src="js/numscroller-1.0.js"></script>
+<!-- /js for statistics -->
+<!-- js for portfolio -->
+<script src="js/jQuery.lightninBox.js"></script>
+<script type="text/javascript">
+	$(".lightninBox").lightninBox();
+</script>
+<!-- /js for portfolio -->
+<!-- js for search button -->
+<script src="js/index.js"></script>
+<!-- /js for search button -->
+<!-- js for banner -->
+<script src="js/zslider-1.0.1.js"></script>
+
+<script type="text/javascript">   //滑动
+		var slider = $('.slider').zslider({
+			imagePanels: $('.slider-panel'),
+			ctrlItems: $('.slider-item'),
+			ctrlItemHoverCls: 'slider-item-selected',
+			//panelHoverShowFlipBtn: false,
+			flipBtn: {
+				container: $('.slider-page'),
+				preBtn: $('.slider-pre'), 
+				nextBtn: $('.slider-next')
+			},
+			callbacks: {
+				animate: function(imagePanels, ctrlItems, fromIndex, toIndex) {
+					return true;
+				}
+			}
+		});
+	</script>
+<!-- /js for banner -->
+<!-- /js files -->
+</body>
+</html>

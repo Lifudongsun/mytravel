@@ -1,0 +1,275 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	/*background: rgb(245, 245, 245);*/
+}
+
+a {
+	cursor: pointer;
+	color: black;
+	text-decoration: none;
+}
+
+.main {
+	min-width: 1000px;
+}
+
+.header {
+	width: 100%;
+	height: 95px;
+	border-bottom: 2px dotted #CCCCCC;
+	/*padding-bottom: 10px 0px;*/
+	margin-bottom: 20px;
+}
+.header>.left {
+	display: inline-block;
+	float: left;
+	margin-top: 35px;
+	padding-left:100px;
+
+}
+.header>.left>a{
+	color: red;
+}
+.header>.right {
+	display: inline-block;
+	float: right;
+	margin-right: 15%;
+	margin-top: 35px;
+	color: rgb(116, 106, 111);
+}
+
+.header>.right>span>a {
+	color: rgb(116, 106, 111);
+}
+
+.header>.right>span>a:hover {
+	color: rgb(235, 26, 62);
+}
+
+.header>.right .span1 {
+	color: rgb(70, 118, 210);
+}
+
+.header>.right .weixin {
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 5px;
+	position: relative;
+	background: url(../img/c_weixin.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.weixinma {
+	width: 152px;
+	height: 152px;
+	border: 2px solid rgb(238, 238, 238);
+	position: absolute;
+	top: 37px;
+	left: -63px;
+	z-index: 2;
+	background: white;
+	display: none;
+}
+
+.weixinma>img {
+	width: 100%;
+	position: absolute;
+}
+
+.weixinma>p {
+	color: rgb(238, 238, 238);
+	position: absolute;
+	top: -10px;
+	left: 66px;
+	text-align: center;
+}
+
+.weixin:hover .weixinma {
+	display: block;
+}
+
+
+/*表单*/
+
+.content {
+	width: 100%;
+	height: 475px;
+	background: url(../img/c_124.png);
+	padding: 50px 0;
+}
+
+.content>.login_cont {
+	width: 1000px;
+	margin: auto;
+	height: 100%;
+}
+
+.login_cont>img {
+	/*border: 1px solid red;*/
+	margin-top: 4%;
+	/*margin-left: 4%;*/
+	width: 510px;
+	height: 360px;
+}
+/*.login_form{
+	border: 1px solid salmon;
+	width: 50%;
+}*/
+.login_form {
+	width: 300px;
+	height:410px;
+	padding: 45px;
+	/*float: right;*/
+	/*margin-top: 1px;*/
+	/*padding: 20px;*/
+	margin-left: 28%;
+	/*background: white;*/
+	/*margin-right: 4%;*/
+	border: 1px solid rgb(221, 221, 221);
+	/*padding: 20px;*/
+}
+
+.login_title {
+	font-size: 30px;
+}
+
+.login_title>a {
+	float: right;
+	color: red;
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+.msg {
+	min-height: 31px;
+	height: auto;
+	margin: 5px 0;
+	visibility: hidden;
+	background: rgb(255, 246, 247);
+}
+
+.msg_win {
+	width: 254px;
+	display: inline-block;
+	min-height: 20px;
+	padding: 3px 10px 3px 40px;
+	margin-top: 3px;
+	position: relative;
+	font-size: 14px;
+}
+
+.msg_win>img {
+	position: absolute;
+	left: 10px;
+	top: 4px;
+}
+
+.item_name,
+.item_pass,
+.item_authcode {
+	position: relative;
+}
+
+.item_name>img,
+.item_pass>img {
+	position: absolute;
+	top: 12px;
+	left: 12px;
+}
+
+.user,
+.pass,
+.input_yan {
+	width: 264px;
+	height: 18px;
+	padding: 10px 0 10px 40px;
+	line-height: 18px;
+	overflow: hidden;
+	font-size: 16px;
+	outline: none;
+	margin-bottom: 20px;
+}
+
+.icon {
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	width: 20px;
+	height: 20px;
+	background: url(../img/user-icon.png)no-repeat;
+	background-position: 0px -57px;
+}
+
+.input_yan {
+	width: 80px;
+}
+.form{
+	/*border: 1px solid salmon;*/
+	margin-top: 25px;
+}
+.yanzheng {
+	display: inline-block;
+	width: 100px;
+	height: 21px;
+	font-family: Arial;
+	font-style: italic;
+	color: blue;
+	vertical-align: top;
+	font-size: 20px;
+	padding: 10px 0;
+	border: 1px solid rgb(204, 204, 204);
+	text-align: center;
+}
+
+.update {
+	color: rgb(102, 102, 102);
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.update>a {
+	color: rgb(102, 102, 102);
+	float: right;
+}
+
+.update>a:hover {
+	color: red;
+}
+
+.login_btn {
+	margin: auto;
+	width: 300px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	background: rgb(235, 26, 62);
+	font-size: 16px;
+	color: white;
+	padding: 5px;
+	/*border: 1px solid aqua;*/
+	margin-top: 30px;
+}
+
+.footer {
+	margin-top: 20px;
+	padding: 25px 0;
+	font-size: 14px;
+	color: rgb(116, 106, 111);
+	text-align: center;
+	line-height: 24px;
+	border-top: 2px dotted #CCCCCC;
+}
+
+.info_text>a:hover {
+	color: rgb(235, 26, 62);
+}
+
+.footer a {
+	color: rgb(116, 106, 111);
+}

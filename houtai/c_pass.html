@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="renderer" content="webkit">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/pintuer.css" />
+		<link rel="stylesheet" type="text/css" href="../css/c_admin.css" />
+		<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/pintuer.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="panel admin-panel">
+			<div class="panel-head"><strong><span class="icon-key"></span> 修改管理员密码</strong></div>
+			<div class="body-content">
+				<form method="post" class="form-x" action="">
+					<div class="form-group">
+						<div class="label">
+							<label for="sitename">帐号：</label>
+						</div>
+						<div class="field">
+							<label style="line-height:33px;" class="label_field"></label>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">
+							<label for="sitename">原始密码：</label>
+						</div>
+						<div class="field">
+							<input type="password" class="input w50" id="mpass" name="mpass" size="50" placeholder="请输入原始密码" data-validate="required:请输入原始密码" />
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">
+							<label for="sitename">新密码：</label>
+						</div>
+						<div class="field">
+							<input type="password" class="input w50" name="newpass" id="password" size="50" placeholder="请输入新密码" data-validate="required:请输入新密码,length#>=6:新密码不能小于6位" />
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">
+							<label for="sitename">确认密码：</label>
+						</div>
+						<div class="field">
+							<input type="password" class="input w50 again_pass" name="renewpass" size="50" placeholder="请再次输入新密码" data-validate="required:请再次输入新密码,repeat#newpass:两次输入的密码不一致" />
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="label">
+							<label></label>
+						</div>
+						<div class="field">
+							<button class="button bg-main icon-check-square-o submit_" type="button"> 提交</button>
+							<span class="submit_11"></span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(".label_field").text(localStorage.getItem("admin"));
+		$.ajax({
+			type: "get",
+			url: "../php/server_login.php?username=" + $('.label_field').text() + "&password=&C=1",
+			success: function(res) {
+				res=JSON.parse(res);
+				console.log(res);	
+				localStorage.setItem("password", res.password);
+			}
+		});
+		$("#mpass").on("blur", function() {
+			if(localStorage.getItem("password") == $("#mpass").val()) {
+				$(".submit_11").text("");
+			} else {
+				$(".submit_11").text("原始密码错误");
+				$(".submit_11").css("color", "red");
+			}
+		});
+		$(".submit_").on("click", function() {
+			if($("#password").val() == ""||$("#password").val()!=$(".again_pass").val()) {
+				alert("请填写正确");
+			} else {
+				$.ajax({
+					type: "get",
+					url: "../php/server_login.php?username=" + $('.label_field').text() + "&password=" + $('#password').val() + "&C=3",
+					success: function(res) {
+						res=JSON.parse(res);
+						alert(res.msg);
+						window.location.href="c_pass.html";
+					}
+				});
+			}
+		});
+	</script>
+
+</html>

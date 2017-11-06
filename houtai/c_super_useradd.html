@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="renderer" content="webkit">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/pintuer.css" />
+		<link rel="stylesheet" type="text/css" href="../css/c_admin.css" />
+		<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/pintuer.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="panel admin-panel">
+			<div class="panel-head"><strong><span class="icon-key"></span> 添加用户</strong></div>
+			<div class="body-content">
+				<form method="post" class="form-x" action="">
+					<div class="form-group">
+						<div class="label">
+							<label for="sitename">用户：</label>
+						</div>
+						<div class="field">
+							<input type="text" class="input w50 userName" id="mpass" name="mpass" size="50" placeholder="请输入手机账号" data-validate="required:请输入手机账号" />
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">
+							<label for="sitename">新密码：</label>
+						</div>
+						<div class="field">
+							<input type="password" class="input w50 newpassword" name="newpass" id="password" size="50" placeholder="请输入新密码" data-validate="required:请输入新密码,length#>=6:新密码不能小于6位" />
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="label">
+							<label for="sitename">确认密码：</label>
+						</div>
+						<div class="field">
+							<input type="password" class="input w50 again_pass" name="renewpass" size="50" placeholder="请再次输入新密码" data-validate="required:请再次输入新密码,repeat#newpass:两次输入的密码不一致" />
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="label">
+							<label></label>
+						</div>
+						<div class="field">
+							<button class="button bg-main icon-check-square-o submit_" onclick="add()" type="button"> 提交</button>
+							<span class="submit_11"></span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			//修改
+			function add() {
+				if($('.userName').val()==""){
+					alert("请输入手机账号");
+				}else if(($(".newpassword").val()==$(".again_pass").val())&&$(".newpassword").val().length>="6"&&$(".again_pass").val().length>="6"){
+					if(confirm("您确定要添加吗?")) {
+						$.ajax({
+							type: "post",
+							url: "../php/c_super_user.php",
+							data: {
+								user:$('.userName').val(),
+								Password:$(".newpassword").val(),
+								C: "add"
+							},
+							success: function(res) {
+								console.log(res);
+								if(res.err == 1) {
+									alert(res);
+								} else {
+									alert(res);
+									window.location.href="c_super_userlist.html";
+								}
+							}
+						});
+					}					
+				}
+
+			}
+		</script>
+	</body>
+
+</html>
